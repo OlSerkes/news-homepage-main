@@ -1,0 +1,102 @@
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "global";
+
+
+.header__main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 80px 0 50px 0;
+}
+    
+
+.logo{
+    &__item{
+        @include fonts(53px, 800, 54px);
+        color: $darkBlue;
+    }
+}
+
+.menu {
+    &__list{
+        display: flex;
+    }
+}
+
+.main{
+    &__img{
+        grid-row: 1/2;
+    }
+    &__img-item{
+        max-width: 100%;
+    }
+    &__box{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1.5fr 1fr;
+        gap: 20px;
+        margin-bottom: 50px;
+    }
+    &__box-article{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 75px;
+    }
+    &__box-text{
+        display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+    }
+}
+
+.info__box{
+    grid-row: 1/-1;
+    background-color: $darkBlue;
+    padding: 30px;
+    div:last-child{
+        margin-bottom: 0;
+    }
+    &-title{
+        @include fonts(40px, 700, 40px);
+        margin-bottom: 35px;
+        color: $softOrange;
+    }
+    &-item{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    &-item-title{
+        @include fonts(20px, 700, 20px);
+        color: #fff;
+        margin-bottom: 15px;
+    }
+}
+
+.title{
+    @include fonts(50px, 800, 58px);
+    color: $darkBlue;
+}
+
+.button {
+    @include button($offWhite, $softRed, $darkBlue)
+}
+
+.trending{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    &__item{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 10px;
+        align-items: end;
+    }
+    &__item-img{
+        max-width: 100%;
+    }
+    &__item-title{
+        color: $darkBlue;
+    }
+}

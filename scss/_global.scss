@@ -1,0 +1,42 @@
+html,
+body {
+    width: 100%;
+    max-width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+body {
+    @extend %font-main;   
+    color: $darkGrayishBlue;    
+}
+
+
+a {
+    color: $darkGrayishBlue; 
+    cursor: pointer;   
+}
+
+a:hover {
+    color: $softRed; 
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.4s;    
+}
+
+
+
+// [tabindex]:focus {
+//     box-shadow: 0 0 2px 2px #51a7e8;
+//     outline: none;
+// }
+
+// [tabindex]:focus:not(:focus-visible) {
+//     box-shadow: none;
+// }
+
+.container {
+    margin-right: 165px;
+    margin-left: 165px;
+}
+
