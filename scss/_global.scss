@@ -1,23 +1,21 @@
 html,
 body {
+    @extend %font-main;
+    @include fonts(15px, 400, 30px);
     width: 100%;
     max-width: 1440px;
     height: 100%;
-    margin: 0 auto;
+    margin: 0 auto;    
+    color: $darkGrayishBlue;
 }
-
-body {
-    @extend %font-main;   
-    color: $darkGrayishBlue;    
-}
-
 
 a {
     color: $darkGrayishBlue; 
     cursor: pointer;   
 }
 
-a:hover {
+a:hover,
+a:active {
     color: $softRed; 
     cursor: pointer;
     text-decoration: none;
