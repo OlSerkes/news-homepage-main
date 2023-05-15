@@ -19,10 +19,11 @@
     <header>
       <div class="container">
         <div class="header__main">
-          <div class="logo">
-            <p class="logo__item">W.</p>
-          </div>
           <nav class="menu">
+            <div class="logo">
+              <p class="logo__item">W.</p>
+              <button class="open-btn" id="open">☰</button>
+            </div>
             <ul class="menu__list">
               <li class="menu__list-item">
                 <a href="#home" class="menu__item-link">Home</a>
@@ -41,6 +42,45 @@
               </li>
             </ul>
           </nav>
+          <div class="modal__container hidden" id="modal">
+            <div class="modal__nav-menu">
+              <div class="modal__header-menu">
+                <button class="close-btn" id="close">✖</button>
+                <div class="modal__content-nav-menu">
+                  <ul class="modal__nav-menu-list">
+                    <li class="modal__list-item">
+                      <a href="#home" class="menu__item-link modal__list-link"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="modal__list-item">
+                      <a href="#new" class="menu__item-link modal__list-link"
+                        >New</a
+                      >
+                    </li>
+                    <li class="modal__list-item">
+                      <a href="#" class="menu__item-link modal__list-link"
+                        >Popular</a
+                      >
+                    </li>
+                    <li class="modal__list-item">
+                      <a
+                        href="#trending"
+                        class="menu__item-link modal__list-link"
+                        >Trending</a
+                      >
+                    </li>
+                    <li class="modal__list-item">
+                      <a href="#" class="menu__item-link modal__list-link"
+                        >Categories</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="overlay hidden"></div>
         </div>
       </div>
     </header>
@@ -94,11 +134,13 @@
                 the power of the platforms back into the hands of the people.
                 But is it really fulfilling its promise?
               </p>
-              <div><a class="button" href="#">Read more</a></div>
+              <div class="main__box-button">
+                <a class="button" href="#">Read more</a>
+              </div>
             </div>
           </article>
         </div>
-        <section class="trending" id="trending">
+        <div class="trending" id="trending">
           <div class="trending__item">
             <img
               class="trending__item-img"
@@ -151,7 +193,7 @@
               </div>
             </div>
           </div>
-        </section>
+        </div>
       </div>
       <div class="attribution">
         Challenge by
@@ -160,5 +202,6 @@
         >. Coded by <a href="#">Oleksandra Serkes</a>.
       </div>
     </main>
+    <script src="js/index.js"></script>
   </body>
 </html>

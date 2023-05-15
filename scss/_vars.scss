@@ -39,3 +39,26 @@ $darkBlue: hsl(240, 100%, 5%);
     }
 }
 
+@mixin hr($lineColor, $width) {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        border-bottom: 2px solid $lineColor;
+        width: $width;
+        left: -8px;
+        bottom: -12px;
+    }
+}
+
+@mixin animate($animation, $duration, $times) {
+    animation: $animation $duration $times;
+}
+
+@mixin keyframes($name) {
+    @keyframes #{$name} {
+        @content;
+    }
+}
+
