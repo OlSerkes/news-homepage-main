@@ -34,7 +34,7 @@ Design mobile preview for the News homepage coding challenge
 ### Links
 
 - Solution URL: [GitHub Pages](https://github.com/OlSerkes/news-homepage-main)
-- Live Site URL: [GitHub Pages](https://olserkes.github.io/news-homepage-main/)
+- Live Site URL: [News homepage](https://olserkes.github.io/news-homepage-main/)
 
 ## My process
 
