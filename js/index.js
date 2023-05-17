@@ -14,10 +14,10 @@ const closeModal = function () {
   overlay.classList.add('hidden');
 };
 
-openModalBtn.addEventListener('click', open);
+openModalBtn.addEventListener('click', openModal);
 
-closeModalBtn.addEventListener('click', close);
+closeModalBtn.addEventListener('click', closeModal);
 
-overlay.addEventListener('click', close);
+overlay.addEventListener('click', closeModal);
 
-menu.addEventListener('click', close);
+menu.addEventListener('click', closeModal);
