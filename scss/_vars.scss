@@ -52,13 +52,5 @@ $darkBlue: hsl(240, 100%, 5%);
     }
 }
 
-@mixin animate($animation, $duration, $times) {
-    animation: $animation $duration $times;
-}
 
-@mixin keyframes($name) {
-    @keyframes #{$name} {
-        @content;
-    }
-}
 
