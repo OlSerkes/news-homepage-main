@@ -108,9 +108,10 @@ hr {
   align-items: center;
   margin: 80px 0 50px 0; }
   .logo__item {
-    font-size: 53px;
+    font-size: 80px;
     font-weight: 800;
     line-height: 54px;
+    font-family: serif;
     color: #00001a; }
 
 .open-btn {

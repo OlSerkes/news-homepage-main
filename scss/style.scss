@@ -18,7 +18,8 @@ hr{
     align-items: center;
     margin: 80px 0 50px 0;
     &__item{
-        @include fonts(53px, 800, 54px);
+        @include fonts(80px, 800, 54px);
+        font-family: serif;
         color: $darkBlue;
     }
 }
